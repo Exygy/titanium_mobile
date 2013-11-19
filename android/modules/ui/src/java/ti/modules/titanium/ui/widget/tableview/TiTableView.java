@@ -136,7 +136,7 @@ public class TiTableView extends FrameLayout
 		}
 
 		public Object getItem(int position) {
-			if (position >= index.size()) {
+			if (position >= index.size() || index.get(position) >= viewModel.getViewModel().size()) {
 				return null;
 			}
 
